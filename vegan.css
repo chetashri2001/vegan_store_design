@@ -1,0 +1,416 @@
+header{
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100;
+    height: auto;
+    padding: 16px 40px 16px 20px
+}
+#logo{
+    width: 40px;
+    height: 40px;
+}
+
+#menu-items{
+    align-self: center;
+}
+
+#menu-items .main-heading{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+#menu-1{
+    display: inline-block;
+    position: relative;
+}
+
+#dropdown1{
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid rgb(170, 210, 54);
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    position: absolute;
+    left:-60px;
+    padding: 20px;
+    height: 50px;
+    width: 120px;
+    height: auto;
+    align-self: center;
+    display: none;
+}
+
+.dropdown-items{
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+    margin: 5px;
+}
+
+#menu-1:hover #dropdown1 {
+    display: block;
+}
+
+#buy-btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+}
+
+body{
+    margin:0px;
+}
+
+#section1{
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+#intro-section{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* #intro-text h1 {
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    max-width: 1000px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+#intro-text p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    max-width: 1100px;
+} */
+
+#intro-section h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align:center;
+    position:absolute;
+    top:30%;
+    left:80px;
+}
+
+#intro-section p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+}
+
+#section2{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    text-align: center;
+}
+
+#step1{
+    background-color:  #5acda6;
+}
+
+#step2{
+    background-color:  #91ac41;
+}
+
+#step3{
+    background-color:  #e4b476;
+}
+
+#step4{
+    background-color:  #f69dad;
+}
+
+.step-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.step-desc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    padding-top: 25px;
+    margin: auto;
+}
+
+#section2 div{
+    padding: 40px;
+    margin: auto;
+    height: 80vh;
+}
+
+#section2 i{
+    font-size: 96px;
+    margin-top: 50px;
+}
+
+#section2 div:hover i{
+    transform: scale(1.1);
+}
+
+#section3{
+    background-color: #f7eee2;
+    text-align: center;
+}
+
+#fresh-food{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    /* margin-top: 35px; */
+    padding-top: 50px;
+    /* padding-bottom: 0; */
+}
+
+#vegan-store{
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    /* padding-top: 0px; */
+    margin: 0px;
+}
+
+#description{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin: 0px;
+}
+
+#icons{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-content: center;
+}
+
+#icons i{
+    background-color: #e3b375;
+    color: white;
+    font-size: 60px;
+    border-radius: 50%;
+    padding: 40px;
+    margin: 40px 0 15px 0;
+    transition: 1s ease-out;
+    transition-duration: 300ms;
+}
+
+.icon-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.icon-desc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+    text-align: center;
+    padding: 25px;
+}
+
+#icons i:hover{
+    transform: scale(1.1);
+}
+
+#section4{
+    text-align: center;
+}
+
+#features{
+    width: 700px;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#testimonial{
+    display: grid;
+    grid-column: auto auto auto;
+    grid-template-areas: "veronica jim peter";
+    width: 85%;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+.card{
+    background-color: #f5f6fb;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+    margin: 35px 10px 65px;
+}
+
+.card-msg{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: Italic;
+    color: #8b8b99;
+    padding: 10px;
+}
+
+.card h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testimonial-card-img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.role{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: Italic;
+    margin-top: -15px;
+}
+
+.veronica {
+    grid-area: veronica;
+}
+
+.jim {
+    grid-area: jim;
+    margin: 55px 20px 75px;
+}
+
+.peter {
+    grid-area: peter;
+}
+
+.card:hover{
+    box-shadow: 0 12px 16px 0 rgba(39, 39, 47, 0.06)
+}
+
+#section5{
+    display: flex;
+    justify-content: stretch;
+
+}
+
+#left {
+    display: inline-block;
+    background-position: right;
+}
+
+#follow-form {
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+    display: inline-block;
+    width: 33.3vw;
+    height: 87vh;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#form-text {
+    margin: 110px;
+}
+
+#strawberries {
+    width: 67vw;
+    height: 87vh;
+}
+
+#follow-form input[type=submit] {
+    background-color: #f69dad;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+#follow-form input[type=submit]:hover {
+    background: white;
+    color: #f69dad;
+    border: 1px solid #f69dad;
+}
+
+#follow-form input[type=email] {
+    background-color: white;
+    color: #8b8b99;
+    padding: 15px;
+    width: 80%;
+    font-size: 18px;
+    border: 0;
+    margin: 25px;
+    margin-left: 0;
+    border-radius: 4px;
+}
+
+#form-text p {
+    color: #8b8b99;
+    font-size: 18px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+

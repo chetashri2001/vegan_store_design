@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+#header {
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+#nav-bar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100;
+    height: auto;
+    padding: 16px 40px 16px 20px;
+}
+
+#header-img {
+    width: 40px;
+    height: 40px;
+}
+
+#menu {
+    align-self: center;
+}
+
+#menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#menu a:last-of-type {
+    padding-right: 20px;
+}
+
+#demo {
+    display: inline-block;
+    position: relative;
+}
+
+#demo:hover #dropdown {
+    display: block;
+}
+
+#dropdown {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 120px;
+    height: auto;
+    padding: 20px;
+    border: 0;
+    border-top: 2px solid rgb(170, 210, 54);
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+}
+
+#menu .nav-link {
+    font-weight: 300;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+    margin: 5px;
+}
+
+#buy-now a {
+    font-size: 12px;
+    color: white;
+}
+
+#buy-now {
+    padding: 10px 18px;
+}
+
+#buy-now,
+#submit {
+    background-color: rgb(170, 210, 54);
+    border-radius: 4px;
+    font-weight: 600;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#submit {
+    font-size: 16px;
+    color: white;
+    padding: 12px 34px;
+}
+
+#start-section {
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+#intro-text h1 {
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    max-width: 1000px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+#intro-text p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    max-width: 1100px;
+}
+
+#intro-text {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#step-one {
+    background-color: #5acda6;
+}
+
+#step-two {
+    background-color: #91ac41;
+}
+
+#step-three {
+    background-color: #e4b476;
+}
+
+#step-four {
+    background-color: #f69dad;
+}
+
+.steps-columns i {
+    font-size: 96px;
+    padding: 60px 0 25px 0;
+    transition: 1s ease-out;
+    transition-duration: 300ms;
+}
+
+.steps-columns:hover>i,
+.details-column:hover>i {
+    transform: scale(1.1);
+}
+
+#steps-section {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    text-align: center;
+}
+
+.steps-header {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.steps {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    padding-top: 25px;
+    margin: auto;
+}
+
+.steps-columns {
+    padding: 40px;
+    margin: auto;
+    height: 68vh;
+}
+
+.camera {
+    grid-area: camera;
+}
+
+.rocket {
+    grid-area: rocket;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.weixin {
+    grid-area: weixin;
+}
+
+#store-section {
+    background-color: #f7eee2;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.details-column-wrapper {
+    display: grid;
+    grid-column: auto auto auto auto;
+    grid-template-areas: "camera rocket twitter weixin";
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+
+.details-column {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.heading {
+    text-align: center;
+    grid-area: heading;
+    padding-top: 75px;
+}
+
+.green-text {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.heading-text {
+    font-weight: 600;
+}
+
+.steps-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.heading-description {
+    font-family: 'Poppins';
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+    font-weight: 500;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.details-column i {
+    font-size: 60px;
+    background: #e3b375;
+    border-radius: 50%;
+    padding: 40px;
+    color: white;
+    margin: 40px 0 15px 0;
+    /* transition: 1s ease-out;
+    transition-duration: 300ms; */
+}
+
+.details-column h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.details-column p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    padding: 25px;
+    width: 85%;
+    margin: auto;
+}
+
+.review-column-wrapper {
+    display: grid;
+    grid-column: auto auto auto;
+    grid-template-areas: "veronica jim peter";
+    margin: auto;
+    width: 78%;
+    padding-bottom: 30px;
+}
+
+.review-column {
+    background-color: #f5f6fb;
+    flex-direction: column;
+    text-align: center;
+    margin: 35px 10px 65px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.review-column:hover {
+    box-shadow: 0 12px 16px 0 rgba(39, 39, 47, 0.06)
+}
+
+.review-column img {
+    width: 80px;
+    border-radius: 50%;
+    padding: 40px 0 30px;
+    transition: 0.3s;
+}
+
+.review-text {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    width: 80%;
+    margin: auto;
+}
+
+.review-name {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 0px 5px;
+}
+
+.role {
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+
+.veronica {
+    grid-area: veronica;
+}
+
+.jim {
+    grid-area: jim;
+    margin: 55px 20px 75px;
+}
+
+.peter {
+    grid-area: peter;
+}
+
+#follow-section {
+    display: flex;
+    justify-content: stretch;
+}
+
+#left {
+    display: inline-block;
+    background-position: right;
+}
+
+#follow-form {
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+    display: inline-block;
+    width: 33.3vw;
+    height: 87vh;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#form-text {
+    margin: 110px;
+}
+
+#strawberries {
+    width: 67vw;
+    height: 87vh;
+}
+
+#follow-form input[type=submit] {
+    background-color: #f69dad;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+#follow-form input[type=submit]:hover {
+    background: white;
+    color: #f69dad;
+    border: 1px solid #f69dad;
+}
+
+#follow-form input[type=email] {
+    background-color: white;
+    color: #8b8b99;
+    padding: 15px;
+    width: 80%;
+    font-size: 18px;
+    border: 0;
+    margin: 25px;
+    margin-left: 0;
+    border-radius: 4px;
+}
+
+#form-text p {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#numbers-section {
+    display: flex;
+    margin: auto;
+    background-color: #f6fcfa;
+    padding: 0px;
+    justify-content: center;
+}
+
+.numbers {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.numbers p {
+    color: #57e3b5;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.customers {
+    grid-area: customers;
+}
+
+.satisfaction {
+    grid-area: satisfaction;
+}
+
+.smoothies {
+    grid-area: smoothies;
+}
+
+iframe {
+    margin: auto;
+    margin-top: -20px;
+}
+
+#video-section {
+    width: 100vw;
+    text-align: center;
+}
+
+#video-section h1 {
+    color: #8b8b99;
+    font-weight: 400;
+    margin: 50px;
+}
+
+#video-section hr {
+    width: 100px;
+    margin: auto;
+    height: 1px;
+    background-color: #e3b375;
+    border: none;
+}
+
+#contact-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact-section div {
+    display: flex;
+    margin: 0 60px;
+}
+
+#address,
+#contact {
+    width: 50%;
+    flex-direction: column;
+}
+
+pre {
+    color: #8b8b99;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+
+#address h1 {
+    font-weight: 600;
+}
+
+#address h2 {
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.contact-text {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+#form .form-items {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 90%;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #232323;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    position: sticky;
+}
+
+@media only screen and (max-width: 1268px) {
+    #start-section {
+        display: block;
+    }
+    #intro-text {
+        padding: 0;
+        width: 90%;
+    }
+    #steps-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #store-section {
+        height: auto;
+    }
+    .details-column-wrapper {
+        grid-column: auto auto;
+        grid-template-areas: "camera rocket" "twitter weixin";
+    }
+    .details-column {
+        display: block;
+    }
+    .review-column-wrapper {
+        width: 100%;
+    }
+    #follow-section {
+        width: 100%;
+    }
+    #follow-form {
+        width: 30%;
+        padding: 20px;
+    }
+    #form-text {
+        margin: 20px;
+    }
+    #follow-form input[type=email] {
+        margin-top: 100px;
+    }
+    iframe {
+        width: 100%;
+    }
+    #contact-section {
+        height: auto;
+    }
+    #contact-section div {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #menu {
+        visibility: hidden;
+    }
+    #buy-now {
+        visibility: visible;
+        margin-right: 20px;
+    }
+    #start-section {
+        display: block;
+    }
+    #intro-text {
+        padding: 0;
+        width: 90%;
+    }
+    #steps-section {
+        display: block;
+    }
+    #store-section {
+        height: auto;
+    }
+    .details-column-wrapper {
+        display: block;
+    }
+    .details-column {
+        display: block;
+    }
+    .review-column-wrapper {
+        display: block;
+        width: 90%;
+    }
+    #follow-section {
+        display: block;
+        width: 100%;
+    }
+    #left {
+        display: block;
+        width: 100%;
+    }
+    #strawberries {
+        width: 100%;
+        height: 70vh;
+    }
+    #follow-form {
+        width: 100vw;
+        height: 80vh;
+    }
+    #form-text {
+        margin: 100px;
+    }
+    #numbers-section {
+        display: block;
+    }
+    .numbers {
+        padding: 50px 50px;
+    }
+    iframe {
+        width: 100%;
+    }
+    #contact-section {
+        height: auto;
+    }
+    #contact-section div {
+        display: block;
+        width: 90%;
+        margin: 30px auto;
+    }
+}
