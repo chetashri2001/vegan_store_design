@@ -76,3 +76,140 @@ nav{
     border-radius: 4px;
     cursor: pointer;
 }
+
+.content{
+    margin-top: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cent_table{
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+table, th, td {
+  /* border: 1px solid black; */
+  border-radius: 15px;
+
+}
+table{
+    border-collapse: collapse;
+}
+
+td{
+    padding:10px 55px 10px 55px;
+    text-align: center;
+}
+td:empty{
+    width:1px;
+    padding:0;
+    
+}
+
+th{
+    padding: 15px 55px 15px 55px;
+    background-color: #f69dad;
+    margin-right: 10px;
+
+}
+
+th:empty{
+    width:10px;
+    padding:0;
+    background-color:white;
+}
+
+button{
+     background-color: #f69dad;
+    color: white;
+    text-transform: uppercase;
+    padding: 8px 13px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+button:hover{
+    background: white;
+    color: #f69dad;
+}
+
+
+.icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  margin: 15px 0 20px 0;
+}
+.icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.icons a {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.icons a i {
+  transition: transform 0.3s ease-in-out;
+}
+.icons a:nth-child(1) {
+  color: #0077b5;
+  border-color: #b3e6ff;
+}
+.icons a:nth-child(1):hover {
+  background: #0077b5;
+}
+.icons a:nth-child(2) {
+  color: #e1306c;
+  border-color: #f5bccf;
+}
+
+.icons a:nth-child(2):hover {
+  background: #e1306c;
+}
+.icons a:nth-child(3) {
+  color: #1877f2;
+  border-color: #b7d4fb;
+}
+.icons a:nth-child(3):hover {
+  background: #1877f2;
+}
+
+
+.icons a:hover {
+  color: #fff;
+  border-color: transparent;
+}
+.icons a:hover i {
+  transform: scale(1.2);
+}
+footer {
+  position: absolute;
+  /* font-family: "Padauk", sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 330px;
+  text-align: center;
+  background-color: #f0f0f0;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    color: rgb(11, 121, 11);
+}

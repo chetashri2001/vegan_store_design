@@ -9,6 +9,28 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&subset=cyrillic" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9a29d1fbc7.js" crossorigin="anonymous"></script>
+
+    <script>
+        //function that display value
+        const items = []
+        const prices = []
+        function calc(item, price) {
+            items.push(item);
+            prices.push(price);
+        }
+
+        function checkout() {
+            count = 0
+            for(i=0; i<items.length; i++)
+            {
+                document.getElementById("disp").innerHTML += (i + 1) + ": " + items[i] + " - INR " + prices[i] + "<br />";
+            
+                count += prices[i]
+            }
+            document.getElementById("line").innerHTML = "The total cost is:"
+             document.getElementById("fin").innerHTML = count
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -25,12 +47,98 @@
                     </div>
                 </div>
                 
-                <a href="#" class='main-heading'>Watch Videos</a>
+                <a href="watchvideos.html" class='main-heading'>Watch Videos</a>
                 <a href="contact.html" class='main-heading'>Contant Us</a>
                 <a href='#'><button id='buy-btn'>BUY NOW</button></a>
                 
             </div>
         </nav>
     </header>
+    <br><br>
+    <div class="content">
+    <h2>Here's a list of vegan items that you can buy to treat your tummy with some delicious munchies! 😋😋</h2>
+   
+    <div class="cent_table">
+    <table>
+        <tr>
+            <th>Item</th>
+            <th></th>
+            <th>Price (INR)</th>
+            <th></th>
+            <th>Quantity Left</th>
+            <th></th>
+            <th>Add to cart</th>
+            
+        </tr>
+        <tr>
+            <td>Beans</td>
+            <td></td>
+            <td>200</td>
+                <td></td>
+            <td>10 packs</td>
+            <td></td>
+            <td><button onClick="calc('Beans', 200)">Add</button></td>
+        </tr>
+        <tr>
+            <td>Lentils</td>
+                <td></td>
+            <td>300</td>
+                <td></td>
+            <td>7 packs</td>
+            <td></td>
+            <td><button onClick="calc('Lentils', 300)">Add</button></td>
+        </tr>
+        <tr>
+            <td>Nuts</td>
+                <td></td>
+            <td>150</td>
+                <td></td>
+            <td>10 packs</td>
+            <td></td>
+            <td><button onClick="calc('Nuts', 150)">Add</button></td>
+        </tr>
+        <tr>
+            <td>Tofu</td>
+                <td></td>
+            <td>100</td>
+                <td></td>
+            <td>5 packs</td>
+            <td></td>
+            <td><button onClick="calc('Tofu', 100)">Add</button></td>
+        </tr>
+        <tr>
+            <td>Seaweed</td>
+                <td></td>
+            <td>150</td>
+                <td></td>
+            <td>3 packs</td>
+            <td></td>
+            <td><button onClick="calc('Seaweed', 150)">Add</button></td>
+        </tr>
+    </table>
+    <br><br>
+    <button onClick="checkout()">CHECKOUT</button>
+    <div id="disp"></div>
+    <div id="line"></div>
+    <div id="fin"></div>
+    </div>
+    </div>
+<footer>
+    <br /><br /><br /><br />
+    &copy; Copyright 2021 Viva Vegan<br />
+    All rights reserved.<br /><br />
+
+    <a href="#" target="_blank" class="contain"><i class="fa fa-envelope-o"
+            aria-hidden="true"></i>&nbsp;support@vivavegan.com</a><br /><br />
+    <div>
+        Follow us on<br />
+        <ul class="icons" style="z-index: 999;">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
