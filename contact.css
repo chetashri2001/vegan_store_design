@@ -1,0 +1,150 @@
+header{
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100;
+    height: auto;
+    padding: 16px 40px 16px 20px
+}
+#logo{
+    /* width: 200px; */
+    height: 50px;
+}
+
+#menu-items{
+    align-self: center;
+}
+
+#menu-items .main-heading{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+#menu-1{
+    display: inline-block;
+    position: relative;
+}
+
+#dropdown1{
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid rgb(170, 210, 54);
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    position: absolute;
+    left:-60px;
+    padding: 20px;
+    height: 50px;
+    width: 120px;
+    height: auto;
+    align-self: center;
+    display: none;
+}
+
+.dropdown-items{
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+    margin: 5px;
+}
+
+#menu-1:hover #dropdown1 {
+    display: block;
+}
+
+#buy-btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact-section div {
+    display: flex;
+    margin: 0 60px;
+}
+
+.green-text {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+#address,
+#contact {
+    width: 50%;
+    flex-direction: column;
+}
+
+pre {
+    color: #8b8b99;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    /* line-height: 2; */
+    margin-top: 0px;
+}
+
+#address h1 {
+    font-weight: 600;
+}
+
+#address h2 {
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-text {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0px;
+}
+
+#form .form-items {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 90%;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+#submit{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: rgb(170, 210, 54);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    padding: 12px 34px;
+}

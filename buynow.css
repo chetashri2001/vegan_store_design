@@ -1,0 +1,78 @@
+header{
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100;
+    height: auto;
+    padding: 16px 40px 16px 20px
+}
+#logo{
+    /* width: 200px; */
+    height: 50px;
+}
+
+#menu-items{
+    align-self: center;
+}
+
+#menu-items .main-heading{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+#menu-1{
+    display: inline-block;
+    position: relative;
+}
+
+#dropdown1{
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid rgb(170, 210, 54);
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    position: absolute;
+    left:-60px;
+    padding: 20px;
+    height: 50px;
+    width: 120px;
+    height: auto;
+    align-self: center;
+    display: none;
+}
+
+.dropdown-items{
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+    margin: 5px;
+}
+
+#menu-1:hover #dropdown1 {
+    display: block;
+}
+
+#buy-btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
