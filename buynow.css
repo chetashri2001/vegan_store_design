@@ -6,6 +6,9 @@ header{
     right: 0px;
     left: 0px;
 }
+body{
+  overflow-x: hidden;
+}
 nav{
     background-color: white;
     display: flex;
@@ -109,7 +112,7 @@ td:empty{
 
 th{
     padding: 15px 55px 15px 55px;
-    background-color: #f69dad;
+    background-color: rgb(246, 157, 173, 0.5);
     margin-right: 10px;
 
 }

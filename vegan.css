@@ -35,7 +35,7 @@ nav{
 #menu-1{
     display: inline-block;
     position: relative;
-    z-index: 1;
+    z-index: 20;
 }
 
 #dropdown1{
@@ -96,6 +96,7 @@ body, html{
     justify-items: center;
     align-items: center;
     margin: auto;
+    z-index: 10;
     
 }
 
@@ -140,6 +141,7 @@ body, html{
     position:absolute;
     top:30%;
     left:400px;
+    z-index: 0;
 }
 
 #intro-section p{
@@ -441,7 +443,7 @@ body, html{
   justify-content: center;
 }
 .icons {
-  margin: 15px 0 20px 0;
+  margin: 15px 0px 20px 0;
 }
 .icons a {
   display: flex;
