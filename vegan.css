@@ -35,6 +35,7 @@ nav{
 #menu-1{
     display: inline-block;
     position: relative;
+    z-index: 1;
 }
 
 #dropdown1{
@@ -44,12 +45,12 @@ nav{
     box-shadow: 0 2px 5px #ccc;
     position: absolute;
     left:-60px;
-    padding: 20px;
-    height: 100px;
+    padding: 20px 10px;
+    height: 130px;
     width: 120px;
-    height: auto;
     align-self: center;
     display: none;
+    /* z-index: 999; */
 }
 
 .dropdown-items{
@@ -63,6 +64,7 @@ nav{
 
 #menu-1:hover #dropdown1 {
     display: block;
+    z-index: 999;
 }
 
 #buy-btn{
@@ -94,6 +96,7 @@ body, html{
     justify-items: center;
     align-items: center;
     margin: auto;
+    
 }
 
 #intro-section{

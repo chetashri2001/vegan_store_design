@@ -47,14 +47,13 @@ nav{
     box-shadow: 0 2px 5px #ccc;
     position: absolute;
     left:-60px;
-    padding: 20px;
-    height: 50px;
+    padding: 20px 10px;
+    height: 130px;
     width: 120px;
-    height: auto;
     align-self: center;
     display: none;
+    /* z-index: 999; */
 }
-
 .dropdown-items{
     color: black;
     display: block;
